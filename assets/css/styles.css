@@ -9,6 +9,43 @@ header h1 {
     font-size: 50px;
     font-weight: bold;
 }
+body {
+    color: #eee6ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    padding: 20px 35px;
+    background-color: #dbc9f2;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.flex-item {
+    width: 45%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+}
+.about-i1 {
+   width: 450px;
+   height: 250px;
+}
+.about-i1 img {
+    width: 100%;
+    height: auto;
+    border: 6px solid #d0edb9;
+}
+/*NAV STYLES START*/
 .nav {
     padding: 20px;
     color: #d0edb9;
@@ -31,11 +68,16 @@ a {
     color: #eee6ff;
     text-decoration: none;
 }
-body {
-    color: #eee6ff;
-    font-family: 'Courier New', Courier, monospace;
+/*NAV STYLES END*/
+
+.about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
 }
-header {
-    padding: 20px 35px;
-    background-color:#c3b8db;
+.content h2 {
+    color: #d0edb9;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
 }
