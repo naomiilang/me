@@ -6,7 +6,7 @@
 }
 
 header h1 {
-    display: inline-block;
+    margin:0;
     font-size: 50px;
     font-weight: bold;
 }
@@ -17,6 +17,9 @@ body {
 header {
     padding: 20px 35px;
     background-color: #dbc9f2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex-container {
@@ -43,6 +46,8 @@ header {
     height: auto;
     border: 6px solid #d0edb9;
 }
+
+
 /*NAV STYLES START*/
 .nav {
     padding: 20px;
@@ -52,7 +57,6 @@ header {
 .nav div {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
 }
 .nav div ul {
     list-style-type: none;
