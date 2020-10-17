@@ -14,7 +14,7 @@ header h1 {
     font-weight: bold;
 }
 header {
-    padding: 20px 35px;
+    padding: 15px 30px;
     background-color: #dbc9f2;
     display: flex;
     justify-content: space-between;
@@ -28,18 +28,21 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+/*FLEX CONTAINER STYLES START*/
 .flex-column {
-    display: flex;
-    word-wrap: break-word;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
 }
 .flex-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     width: 50%;
     gap: 10px;
-    float: right;
 }
 .flex-item {
     display: flex;
@@ -58,8 +61,14 @@ header {
     height: auto;
     border: 6px solid #d0edb9;
 }
+/*flex styles end*/
 
-
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0px 0px;
+}
 /*NAV STYLES START*/
 .nav {
     padding: 20px;
@@ -82,6 +91,7 @@ header {
     margin-left: 45px;
     font-size: 23px
 }
+
 a {
     margin: 0 30px;
     font-weight:lighter;
@@ -90,8 +100,8 @@ a {
 }
 /*NAV STYLES END*/
 
-.about-me {
-    margin-bottom: 20px;
+.content {
+    margin-bottom: 70px;
     padding: 50px;
     height: 300px;
     display: flex;
@@ -103,25 +113,35 @@ article p {
     margin-bottom: 20px;
     padding: 25px;
     height: 300px;
-    width: 500px;
+    width: 400px;
+    text-align: center;
 }
-article h2 {
+.content h2 {
+    float: left;
     color: #d0edb9;
     font-weight: bold;
     font-size: 35px;
     text-align: center;
-    display: block;
+    display: inline-flex;
     margin: 0 auto;
-    width: 15%;
+    width: 20%;
     padding-top: 15px;
     border-right: 2px solid #eee6ff;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    float: left;
 }
-
+article ul {
+    margin-bottom: 20px;
+    padding: 25px;
+    height: 30px;
+    width: 500px;
+}
+.contact-ul {
+    list-style-type: none;
+}
 .footer {
+    margin-top: 20px;
     padding: 30px;
     clear: both;
     text-align: center;
