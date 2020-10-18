@@ -154,6 +154,7 @@ article ul {
     font-size: 20px;
     font-weight: bolder;
     border-bottom: 2px solid #d0edb9;
+    justify-content: center;
 }
 .footer {
     margin-top: 20px;
