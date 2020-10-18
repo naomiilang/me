@@ -30,7 +30,7 @@ header {
 }
 
 
-/*FLEX CONTAINER STYLES START*/
+/*FLEX CONTAINER about me STYLES START*/
 
 .flex-column {
     flex: auto;
@@ -56,7 +56,7 @@ header {
     width: 45%;
     border-radius: 14px;
     margin-bottom: 15px;
-    padding: 20px 0;
+    padding: 10px 0;
     min-height: 250px;
     flex-direction: column;
     justify-content: space-between;
@@ -101,6 +101,52 @@ a {
 }
 /*NAV STYLES END*/
 
+/*GRID STYLES START*/
+
+.grid-container {
+    justify-content: center;
+    margin-top:15px;
+    display: grid;
+    width: 85%;
+    padding: 20px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d0edb9;
+    font-size: 20px;
+    background-color: #eee6ff;
+}
+
+.item-1 {
+    grid-column: 1/span 5;
+    grid-row: 1/span 7;
+}
+
+.item-2 {
+    grid-column: 1 / span 3;
+    grid-row: 8/span 8;
+}
+.item-3 {
+    grid-column: 4 /span 2;
+    grid-row: 8/span 8;
+}
+.item-4 {
+    grid-column: 6/span 1;
+    grid-row: 8/ span 8;
+}
+.item-5 {
+    grid-row: 1/span 7;
+    grid-column: 6/ span 1;
+}
+/*GRID STYLES END*/
+
 .content {
     margin-bottom: 70px;
     margin-right: 20px;
@@ -113,6 +159,7 @@ a {
 }
 article {
     margin-bottom: 45px;
+    
 }
 article p {
     flex: auto;
@@ -121,6 +168,7 @@ article p {
     height: 300px;
     width: 400px;
     text-align: center;
+    flex-wrap: wrap;
 }
 .content h2 {
     flex: auto;
@@ -136,9 +184,7 @@ article p {
     flex-wrap: wrap;
     border-right: 4px solid #d0edb9;
 }
-.work h2 {
-    float: left;
-}
+
 article ul {
     display: inline-flex;
     flex-wrap: wrap;
@@ -153,8 +199,8 @@ article ul {
     list-style-type: none;
     font-size: 20px;
     font-weight: bolder;
-    border-bottom: 2px solid #d0edb9;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .footer {
     margin-top: 20px;
@@ -164,3 +210,21 @@ article ul {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.footer h2 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    .content h2 {
+        border-right: none;
+    }
+    .content-ul {
+        flex-direction: column;
+    }
+}
+
