@@ -107,7 +107,7 @@ a {
     justify-content: center;
     margin-top:15px;
     display: grid;
-    width: 85%;
+    width: 80%;
     padding: 20px;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,1fr);
@@ -165,9 +165,7 @@ article {
 }
 article p {
     flex: auto;
-    margin-bottom: 20px;
     padding: 25px;
-    height: 300px;
     width: 400px;
     text-align: center;
     flex-wrap: wrap;
@@ -219,17 +217,20 @@ article ul {
 }
 
 
-@media screen and (max-width: 1005px) {
+@media screen and (max-width: 1008px) {
     .flex-container {
         position: relative;
-    }
-    .content h2 {
-        border-right: none;
+        width: 100%;
+        flex-wrap: nowrap;
+        padding-bottom: 30px;
     }
     .grid-container {
         width: 100%;
     }
-
+    .content h2 {
+        border-right: none;
+    }
+    
     .contact-ul {
         flex-wrap: wrap;
     }
