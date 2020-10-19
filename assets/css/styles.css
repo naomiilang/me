@@ -36,7 +36,6 @@ header {
     flex: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items:center;
     justify-self: start;
 }
@@ -47,8 +46,8 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding:0 auto;
-    margin: 0 auto;
+    padding:0;
+    margin: 0;
     width: 45%;
     gap: 10px;
 }
@@ -220,10 +219,9 @@ article ul {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1005px) {
     .flex-container {
-        flex-flow: column wrap;
-        display: inline-block;
+        position: relative;
     }
     .content h2 {
         border-right: none;
