@@ -134,6 +134,7 @@ a {
 .item-2 {
     grid-column: 1 / span 3;
     grid-row: 8/span 8;
+    background-image: url(../images/Screen\ Shot\ 2020-12-03\ at\ 12.37.05\ AM.png);
 }
 .item-3 {
     grid-column: 4 /span 2;
