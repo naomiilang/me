@@ -139,6 +139,7 @@ a {
 .item-3 {
     grid-column: 4 /span 2;
     grid-row: 8/span 8;
+    background-image: url(../images/Screen\ Shot\ 2021-02-14\ at\ 4.14.50\ PM.png);
 }
 .item-4 {
     grid-column: 6/span 1;
